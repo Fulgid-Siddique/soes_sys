@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Caching;
-using System.SOES.Core;
 using SOES.Core.Models;
 
 namespace SOES.DataAccess.InMemory
 {
-    class ApplicantRepository
+    public class ApplicantRepository
     {
         ObjectCache cache = MemoryCache.Default;
         List<Applicant> applicants = new List<Applicant>();

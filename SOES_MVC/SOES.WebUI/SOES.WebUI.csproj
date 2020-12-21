@@ -164,6 +164,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ApplicantManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -329,6 +330,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ApplicantManager\Index.cshtml" />
+    <Content Include="Views\ApplicantManager\Create.cshtml" />
+    <Content Include="Views\ApplicantManager\Edit.cshtml" />
+    <Content Include="Views\ApplicantManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -343,6 +348,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOES.Core\SOES.Core.csproj">
+      <Project>{c23ba034-255b-46f2-a367-f12ffd0b1590}</Project>
+      <Name>SOES.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOES.DataAccess.InMemory\SOES.DataAccess.InMemory.csproj">
+      <Project>{94383e8b-ba34-4a61-bfd6-3985be04d5f5}</Project>
+      <Name>SOES.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOES.DataAccess.SQL\SOES.DataAccess.SQL.csproj">
+      <Project>{2aa33ab2-4a3a-4d90-8071-fe81eb55de0d}</Project>
+      <Name>SOES.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOES.Services\SOES.Services.csproj">
+      <Project>{a5ddcb54-cd31-4c48-8961-6c7f4e67cf7e}</Project>
+      <Name>SOES.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

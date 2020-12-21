@@ -1,0 +1,160 @@
+﻿@model SOES.Core.Models.Applicant
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Applicant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicantName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicantName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNIC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNIC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassportNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassportNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPIssueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPIssueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPExpiryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPExpiryDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPIssuePlace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPIssuePlace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Education)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Education)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocalExpereince)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocalExpereince)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AbrodaExpereince)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AbrodaExpereince)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CellNo1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CellNo1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CellNo2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CellNo2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ref)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ref)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

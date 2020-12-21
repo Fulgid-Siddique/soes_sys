@@ -1,0 +1,128 @@
+﻿@model IEnumerable<SOES.Core.Models.Applicant>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicantName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CNIC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPIssueDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPExpiryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPIssuePlace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Education)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocalExpereince)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AbrodaExpereince)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellNo1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellNo2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ref)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicantName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FatherName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNIC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPIssueDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPExpiryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPIssuePlace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Education)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocalExpereince)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AbrodaExpereince)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellNo1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellNo2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ref)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id }) | 
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+        </td>
+    </tr>
+}
+
+</table>
